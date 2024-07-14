@@ -132,7 +132,8 @@
         <h2>Project Progress</h2>
         <div class="links">
             <ul>
-                <li><b>Equation Discovery with Bayesian Spike-and-Slab Priors and Efficient Kernels</b></li>
+                <li><b>Bayesian spatial-temporal function decomposition: </b> Building modeling often involves simulating and computing spatial-temporal functions, such as temperature and energy functions. In this work, we develop a Bayesian approach for learning and representing such functions. Specifically, we decompose the multi-variate spatial-temporal function as a combination of single-variable latent functions, where each latent function is over one spatial or temporal variable. To allow interpretability and easy learning, we  combine those single-variable functions via a multi-linear Tucker decomposition form.  We use Gaussian processes (GP) as functional priors to model the latent functions. Then, we convert each GP into a state-space prior by constructing an equivalent stochastic differential equation (SDE). This way, we can largely reduce the cost for training and inference. We use message massing and conditional moment match to develop an efficient inference algorithm for posterior approximation. The advantage of our method is shown in both synthetic real-world benchmark datasets. In synthetic data, our method can correctly recover the latent functions and reconstruct the response surface accurately within quite noisy observations. On the US temperature dataset that records interactions among latitude, longitude, and time, our learned latent functions not only reflect the spatial proximity of the locations in terms of both latitude and longitude, but also aligns with the climate change in the past 260 years.
+                </li>
                 <br>
                 <li><b>Multi-Resolution Active Learning of Fourier Neural Operators</b></li>
                 <br>
