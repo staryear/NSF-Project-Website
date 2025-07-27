@@ -84,13 +84,13 @@
                 <div class="team-member">
                     <img src="image/jianli-chen.jpg" alt="Jianli Chen">
                     <div>
-                        <strong>Pi: Jianli Chen</strong> - <a href="https://i2be.civil.utah.edu/">Profile</a>
+                        <strong>Former Pi: Jianli Chen</strong> - <a href="https://i2be.civil.utah.edu/">Profile</a>
                     </div>
                 </div>
                 <div class="team-member">
                     <img src="image/shandian.jpg" alt="Shandian Zhe">
                     <div>
-                        <strong>Co-PI: Shandian Zhe</strong> - <a href="https://users.cs.utah.edu/~zhe/">Profile</a>
+                        <strong>PI: Shandian Zhe</strong> - <a href="https://users.cs.utah.edu/~zhe/">Profile</a>
                     </div>
                 </div>
             </div>
@@ -128,9 +128,9 @@
                 <div class="team-member">
                     <img src="image/zhihao-ma.jpg" alt="Da Long">
                     <div>
-                        <strong>Zhihao Ma</strong><br>
-                        PhD student, 2nd year<br>
-                        <a href="https://www.linkedin.com/in/zhihao-ma-01955a288/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+                        <strong>Qiwei Yuan</strong><br>
+                        PhD student, 3rd year<br>
+                        <a href="https://www.linkedin.com/in/joshua-yuan-great">LinkedIn</a>
                     </div>
                 </div>
             </div>
@@ -163,6 +163,13 @@
         <h2>Project Progress</h2>
         <div class="links">
             <ul>
+                <li><b>LLM Agent for Building Design</b>: Large Language Models (LLMs) are gaining increasing attention for their potential to improve efficiency and sustainability in the building domain. Building Energy Modeling (BEM) traditionally requires substantial time and effort during the design and development phases. To alleviate this burden and promote the broader adoption of energy modeling in building design and operations, Automated Building Energy Modeling (ABEM) has emerged as a promising solution.
+
+We have developed an efficient fine-tuning framework to adapt LLMs for ABEM tasks. Leveraging Low-Rank Adaptation (LoRA) and a comprehensive training dataset containing 490,000 samples, our approach enables effective LLM customization while maintaining computational efficiency. Further improvements in training speed and resource usage are achieved through model quantization and mixed-precision training.
+
+Using this framework, we introduce EPlus-LLMv2, a platform capable of automatically generating complex building models with varying geometries, thermal zones, construction materials, hourly schedules, and operational parameters. Evaluations on 402 modeling cases demonstrate 100% modeling accuracy while reducing manual modeling effort by over 98%.
+
+To enhance usability, we also developed an interactive human-AI interface, making the platform more accessible to designers and engineers. Finally, we discuss key insights and future directions for customizing LLMs in ABEM and other applications within the building sector.</li>
                 <li><b>AI Powered Physics-based Building Modeling:</b> Establishing building energy models (BEMs) for design and analysis is fraught with challenges due to the intensive modeling efforts required, the expertise needed to use simulation software, and the necessary knowledge of building science. These factors make building modeling labor-intensive and hinder its widespread adoption in building development. To address these challenges and enhance automation in modeling practices, this work introduces Eplus-LLM as an automated building modeling platform. This platform leverages a fine-tuned large language mode to directly translate natural language descriptions of buildings into established models featuring various geometries, occupancy scenarios, and equipment loads. By fine-tuning the LLM, it is tailored to understand natural language and simulation requirements from users, converting human descriptions into EnergyPlus modeling files. The Eplus-LLM platform then automates the building modeling process by invoking the EnergyPlus engine's API to simulate the auto-generated model files and produce the desired simulation results.
                 </li>
                 <li><b>Bayesian spatial-temporal function decomposition: </b> Building modeling often involves simulating and computing spatial-temporal functions, such as temperature and energy functions. In this work, we develop a Bayesian approach for learning and representing such functions. Specifically, we decompose the multi-variate spatial-temporal function as a combination of single-variable latent functions, where each latent function is over one spatial or temporal variable. To allow interpretability and easy learning, we  combine those single-variable functions via a multi-linear Tucker decomposition form.  We use Gaussian processes (GP) as functional priors to model the latent functions. Then, we convert each GP into a state-space prior by constructing an equivalent stochastic differential equation (SDE). This way, we can largely reduce the cost for training and inference. We use message massing and conditional moment match to develop an efficient inference algorithm for posterior approximation. The advantage of our method is shown in both synthetic real-world benchmark datasets. In synthetic data, our method can correctly recover the latent functions and reconstruct the response surface accurately within quite noisy observations. On the US temperature dataset that records interactions among latitude, longitude, and time, our learned latent functions not only reflect the spatial proximity of the locations in terms of both latitude and longitude, but also aligns with the climate change in the past 260 years.
